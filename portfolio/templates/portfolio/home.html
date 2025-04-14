@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head><title>My Portfolio</title></head>
+    <body>
+        <h1>Hello, I'm Harini Pradeepkumar</h1>
+        <h2>About Me:</h2>
+        <p>Resourceful Python Developer with 9+ years of experience across various domains including in AI/ML domain designing, developing, and deploying machine learning models and deep learning/AI-driven solutions with optimised performance for image retrieval, NLP, and time-series forecasting using PyTorch and TensorFlow; in data engineering domain with pandas for data processing, optimisations for large-scale data; in cloud domain building ML workflows with Google Cloud Platform (GCP) </p>
+        <h2>Projects:</h2>
+        <ul>
+            {% for project in projects %}
+                <li>{{ project.title}} - <a href="{{projects.github_link}}">GitHub</a></li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
